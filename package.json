@@ -1,0 +1,28 @@
+{
+  "name": "electron-webview-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "build": {
+    "appId": "com.yourcompany.yourapp",
+    "productName": "tamurakeitoapp",
+    "mac": {
+      "category": "public.app-category.utilities"
+    }
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn build && electron ./electron/build/main.js",
+    "build": "tsc",
+    "package": "electron-packager ."
+  },
+  "dependencies": {
+    "@types/wait-on": "^5.3.4",
+    "electron": "^32.2.0",
+    "serve": "^14.2.3",
+    "typescript": "^5.6.3",
+    "wait-on": "^8.0.1"
+  },
+  "devDependencies": {
+    "electron-packager": "^17.1.2"
+  }
+}
