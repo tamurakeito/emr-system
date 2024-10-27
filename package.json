@@ -1,6 +1,6 @@
 {
-  "name": "electron-webview-example",
-  "version": "1.0.0",
+  "name": "emr-system",
+  "version": "0.1.0",
   "main": "index.js",
   "build": {
     "appId": "com.yourcompany.yourapp",
@@ -11,18 +11,32 @@
   },
   "license": "MIT",
   "scripts": {
-    "start": "yarn build && electron ./electron/build/main.js",
-    "build": "tsc",
-    "package": "electron-packager ."
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "electron": "yarn electron-build && electron ./electron/build/main.js",
+    "electron-build": "tsc ./electron/main.ts --outDir ./electron/build",
+    "electron-package": "electron-packager ."
   },
   "dependencies": {
-    "@types/wait-on": "^5.3.4",
-    "electron": "^32.2.0",
-    "serve": "^14.2.3",
-    "typescript": "^5.6.3",
-    "wait-on": "^8.0.1"
+    "react": "19.0.0-rc-69d4b800-20241021",
+    "react-dom": "19.0.0-rc-69d4b800-20241021",
+    "next": "15.0.1"
   },
   "devDependencies": {
+    "typescript": "^5.6.3",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/wait-on": "^5.3.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.1",
+    "electron": "^32.2.0",
+    "serve": "^14.2.3",
+    "wait-on": "^8.0.1",
     "electron-packager": "^17.1.2"
   }
 }
