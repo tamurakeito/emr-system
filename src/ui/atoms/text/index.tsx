@@ -1,7 +1,6 @@
-import "./index.scss";
 import { ReactNode } from "react";
 import classNames from "classnames";
-import "./index.scss";
+import classes from "./styles.module.scss";
 
 const Text = ({
   children,
@@ -14,7 +13,11 @@ const Text = ({
   className?: string;
   onClick?: () => void;
 }) => {
-  const clazz = classNames("Text", `font--${size}`, className);
+  const clazz = classNames(
+    classes.text,
+    size && classes[`font--${size}`],
+    className
+  );
   return (
     <span className={clazz} onClick={onClick}>
       {children}

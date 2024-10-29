@@ -63,16 +63,16 @@
     "@types/sass": "^1.43.1",
     "@types/wait-on": "^5.3.4",
     "classnames": "^2.3.2",
+    "electron": "^32.2.0",
+    "electron-packager": "^17.1.2",
     "eslint-plugin-storybook": "^0.8.0",
     "prop-types": "^15.8.1",
     "sass": "^1.58.0",
+    "serve": "^14.2.3",
     "storybook": "^8.1.1",
     "storybook-addon-sass-postcss": "^0.2.0",
     "the-new-css-reset": "^1.8.4",
-    "webpack": "^5.91.0",
-    "electron": "^32.2.0",
-    "serve": "^14.2.3",
     "wait-on": "^8.0.1",
-    "electron-packager": "^17.1.2"
+    "webpack": "^5.91.0"
   }
 }

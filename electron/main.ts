@@ -1,10 +1,10 @@
 import { app, BrowserWindow, screen } from "electron";
-import { exec, ChildProcess } from "child_process";
+// import { exec, ChildProcess } from "child_process";
 // import waitOn from "wait-on";
 
 let mainWindow: BrowserWindow | null;
 
-let serveProcess: ChildProcess | null = null;
+// let serveProcess: ChildProcess | null = null;
 
 const createWindow = () => {
   const primaryDisplay = screen.getPrimaryDisplay();
