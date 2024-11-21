@@ -1,0 +1,10 @@
+@use "assets/scss/config/variables" as var;
+
+.inversion {
+  border: {
+    top: 2px solid var.$GRAY_700;
+    left: 2px solid var.$GRAY_600;
+    bottom: 2px solid var.$WHITE;
+    right: 2px solid var.$GRAY_100;
+  }
+}

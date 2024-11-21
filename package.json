@@ -2,6 +2,17 @@
   "name": "emr-system",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "push": "chmod 755 .gitpush.sh &&./.gitpush.sh",
+    "ini": "chmod 755 .init.sh && ./.init.sh",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "electron": "yarn electron-build && electron ./electron/build/main.js",
+    "electron-build": "tsc ./electron/main.ts --outDir ./electron/build",
+    "electron-package": "electron-packager ."
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -17,36 +28,6 @@
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "push": "chmod 755 .gitpush.sh &&./.gitpush.sh",
-    "ini": "chmod 755 .init.sh && ./.init.sh",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "electron": "yarn electron-build && electron ./electron/build/main.js",
-    "electron-build": "tsc ./electron/main.ts --outDir ./electron/build",
-    "electron-package": "electron-packager ."
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest",
-      "plugin:storybook/recommended"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.4.0",
@@ -67,6 +48,7 @@
     "electron-packager": "^17.1.2",
     "eslint-plugin-storybook": "^0.8.0",
     "prop-types": "^15.8.1",
+    "react-feather": "^2.0.10",
     "sass": "^1.58.0",
     "serve": "^14.2.3",
     "storybook": "^8.1.1",
@@ -74,5 +56,24 @@
     "the-new-css-reset": "^1.8.4",
     "wait-on": "^8.0.1",
     "webpack": "^5.91.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "plugin:storybook/recommended"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

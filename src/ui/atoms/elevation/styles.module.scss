@@ -1,0 +1,10 @@
+@use "assets/scss/config/variables" as var;
+
+.elevation {
+  border: {
+    top: 2px solid var.$WHITE;
+    left: 2px solid var.$GRAY_100;
+    bottom: 2px solid var.$GRAY_700;
+    right: 2px solid var.$GRAY_600;
+  }
+}

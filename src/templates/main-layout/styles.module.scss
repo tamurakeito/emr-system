@@ -1,0 +1,11 @@
+@use "assets/scss/config/variables" as var;
+
+.main_layout {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  .main_container {
+    width: 100%;
+    background: var.$GRAY_200;
+  }
+}

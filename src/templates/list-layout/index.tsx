@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import classes from "./styles.module.scss";
 import Text, { textSizes } from "ui/atoms/text";
 
-const Layout = () => {
+const ListLayout = () => {
   return (
     <div>
       <Text size={textSizes.h1}>hello world</Text>
@@ -11,4 +11,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default ListLayout;

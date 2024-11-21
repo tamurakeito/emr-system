@@ -1,0 +1,18 @@
+@use "assets/scss/config/variables" as var;
+
+.label_button {
+  background: linear-gradient(
+    5deg,
+    var.$EMR_PRIMARY,
+    rgba(255, 255, 255, 0.6) 50%,
+    var.$EMR_PRIMARY
+  );
+  width: 100px;
+  height: 24px;
+  svg {
+    color: var.$EMR_TERTIARY;
+    margin: {
+      right: 6px;
+    }
+  }
+}

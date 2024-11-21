@@ -1,0 +1,67 @@
+@use "assets/scss/config/variables" as var;
+
+.control_panel {
+  // width: var.$LAYOUT_CONTROL_PANEL_WIDTH;
+  height: 100vh;
+  background: var.$EMR_PRIMARY;
+}
+
+.user_control_panel {
+  width: var.$LAYOUT_CONTROL_PANEL_WIDTH;
+  padding: 8px 8px;
+  background: var.$EMR_SECONDARY;
+}
+
+.user_action_bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user_profile {
+  margin-top: 6px;
+}
+
+.account_field {
+  display: flex;
+  justify-content: space-between;
+  // width: calc($LAYOUT_CONTROL_PANEL_WIDTH - 20px);
+  width: 100%;
+  margin: {
+    top: 4px;
+  }
+  overflow: hidden;
+  .input {
+    margin: {
+      left: 4px;
+      right: 4px;
+    }
+  }
+}
+
+.view_selector {
+  display: flex;
+  justify-content: center;
+  margin: 8px;
+}
+
+.active_karte_list {
+  height: 84px;
+  background: var.$WHITE;
+  margin: 2px;
+}
+
+.menu_control_panel {
+  .menu_access_bar {
+    display: flex;
+    justify-content: right;
+    margin: 8px;
+    .right_access_button {
+      margin: {
+        left: 4px;
+      }
+    }
+  }
+  .menu_list_switcher {
+    display: flex;
+  }
+}

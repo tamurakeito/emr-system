@@ -1,0 +1,35 @@
+@use "assets/scss/config/variables" as var;
+
+.elevation_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.size {
+    &_medium {
+      width: 42px;
+      height: 28px;
+    }
+    &_small {
+      width: 32px;
+      height: 24px;
+    }
+    &_wide {
+      width: 100px;
+      height: 24px;
+    }
+  }
+  &.color {
+    &_gray {
+      background: var.$GRAY_300;
+      color: var.$GRAY_700;
+    }
+    &_primary {
+      background: var.$EMR_PRIMARY;
+      color: var.$EMR_TERTIARY;
+    }
+    &_orange {
+      background: #fed9b3;
+      color: #ff9e3c;
+    }
+  }
+}
