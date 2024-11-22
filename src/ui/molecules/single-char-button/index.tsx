@@ -1,12 +1,11 @@
-import classNames from "classnames";
 import classes from "./styles.module.scss";
 import ElevationButton, {
-  elevationButtonColors,
-  ElevationButtonProps,
-  elevationButtonSizes,
-} from "ui/molecules/elevation-button";
+  morphButtonColors,
+  MorphButtonProps,
+  morphButtonSizes,
+} from "ui/molecules/morph-button";
 
-interface SingleCharButtonProps extends Omit<ElevationButtonProps, "children"> {
+interface SingleCharButtonProps extends Omit<MorphButtonProps, "children"> {
   char: string;
 }
 
@@ -18,8 +17,8 @@ const SingleCharButton = ({
   return (
     <ElevationButton
       className={className}
-      type={props.type ?? elevationButtonSizes.medium}
-      color={props.color ?? elevationButtonColors.gray}
+      type={props.type ?? morphButtonSizes.medium}
+      color={props.color ?? morphButtonColors.gray}
       {...props}
     >
       <div className={classes.single_char_button}>{char.charAt(0)}</div>

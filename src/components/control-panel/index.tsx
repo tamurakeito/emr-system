@@ -1,14 +1,9 @@
-import Text, { textSizes } from "ui/atoms/text";
 import classes from "./styles.module.scss";
 import IconButton, { buttonIcons } from "ui/molecules/icon-button";
 import SingleCharButton from "ui/molecules/single-char-button";
-import ElevationButton, {
-  elevationButtonColors,
-  elevationButtonSizes,
-} from "ui/molecules/elevation-button";
+import { morphButtonColors, morphButtonSizes } from "ui/molecules/morph-button";
 import Elevation from "ui/atoms/elevation";
 import Input from "ui/atoms/input";
-import { Activity } from "react-feather";
 import LabelButton, { buttonLabels } from "ui/molecules/label-button";
 import Inversion from "ui/atoms/inversion";
 
@@ -24,7 +19,7 @@ const ControlPanel = () => {
           <IconButton icon={buttonIcons.users} onClick={handleUserSwitch} />
           <IconButton
             icon={buttonIcons.home}
-            color={elevationButtonColors.orange}
+            color={morphButtonColors.orange}
             onClick={handleSignOut}
           />
         </div>
@@ -33,7 +28,7 @@ const ControlPanel = () => {
             <IconButton
               className={classes.fixed}
               icon={buttonIcons.settings}
-              type={elevationButtonSizes.small}
+              type={morphButtonSizes.small}
               onClick={() => {}}
             />
             <Input
@@ -47,8 +42,8 @@ const ControlPanel = () => {
             <SingleCharButton
               className={classes.fixed}
               char={"依存"}
-              type={elevationButtonSizes.small}
-              color={elevationButtonColors.primary}
+              type={morphButtonSizes.small}
+              color={morphButtonColors.primary}
               onClick={() => {}}
             />
             <Input
@@ -60,7 +55,7 @@ const ControlPanel = () => {
             <SingleCharButton
               className={classes.fixed}
               char={"Clear"}
-              type={elevationButtonSizes.small}
+              type={morphButtonSizes.small}
               onClick={() => {}}
             />
           </div>
@@ -68,8 +63,8 @@ const ControlPanel = () => {
             <SingleCharButton
               className={classes.fixed}
               char={"指導"}
-              type={elevationButtonSizes.small}
-              color={elevationButtonColors.primary}
+              type={morphButtonSizes.small}
+              color={morphButtonColors.primary}
               onClick={() => {}}
             />
             <Input
@@ -81,8 +76,8 @@ const ControlPanel = () => {
             <SingleCharButton
               className={classes.fixed}
               char={"Clear"}
-              type={elevationButtonSizes.small}
-              color={elevationButtonColors.primary}
+              type={morphButtonSizes.small}
+              color={morphButtonColors.primary}
               onClick={() => {}}
             />
           </div>
@@ -92,8 +87,8 @@ const ControlPanel = () => {
         <LabelButton label={buttonLabels.emergency} onClick={() => {}} />
         <IconButton
           icon={buttonIcons.chevronDown}
-          type={elevationButtonSizes.small}
-          color={elevationButtonColors.primary}
+          type={morphButtonSizes.small}
+          color={morphButtonColors.primary}
           onClick={() => {}}
         />
       </div>
@@ -104,26 +99,26 @@ const ControlPanel = () => {
         <div className={classes.menu_access_bar}>
           <IconButton
             icon={buttonIcons.serch}
-            type={elevationButtonSizes.small}
+            type={morphButtonSizes.small}
             onClick={() => {}}
           />
           <IconButton
             className={classes.right_access_button}
             icon={buttonIcons.grid}
-            type={elevationButtonSizes.small}
+            type={morphButtonSizes.small}
             onClick={() => {}}
           />
         </div>
         <div className={classes.menu_list_switcher}>
           <IconButton
             icon={buttonIcons.serch}
-            type={elevationButtonSizes.wide}
+            type={morphButtonSizes.wide}
             onClick={() => {}}
           />
           <IconButton
             className={classes.right_access_button}
             icon={buttonIcons.grid}
-            type={elevationButtonSizes.small}
+            type={morphButtonSizes.small}
             onClick={() => {}}
           />
         </div>

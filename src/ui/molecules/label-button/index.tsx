@@ -1,22 +1,11 @@
 import classNames from "classnames";
 import classes from "./styles.module.scss";
-import {
-  Activity,
-  ChevronDown,
-  Home,
-  Settings,
-  Users,
-  UserX,
-} from "react-feather";
-import ElevationButton, {
-  elevationButtonColors,
-  ElevationButtonProps,
-  elevationButtonSizes,
-} from "ui/molecules/elevation-button";
+import { Activity } from "react-feather";
+import ElevationButton, { MorphButtonProps } from "ui/molecules/morph-button";
 import Text, { textColors, textSizes } from "ui/atoms/text";
 
 interface LabelButtonProps
-  extends Omit<ElevationButtonProps, "children" | "color"> {
+  extends Omit<MorphButtonProps, "children" | "color"> {
   label: ButtonLabels;
 }
 

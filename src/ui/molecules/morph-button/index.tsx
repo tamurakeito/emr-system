@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import classes from "./styles.module.scss";
 import classNames from "classnames";
 import Button, { ButtonProps } from "ui/atoms/button";

@@ -10,12 +10,12 @@ import {
   UserX,
 } from "react-feather";
 import ElevationButton, {
-  elevationButtonColors,
-  ElevationButtonProps,
-  elevationButtonSizes,
-} from "ui/molecules/elevation-button";
+  morphButtonColors,
+  MorphButtonProps,
+  morphButtonSizes,
+} from "ui/molecules/morph-button";
 
-interface IconButtonProps extends Omit<ElevationButtonProps, "children"> {
+interface IconButtonProps extends Omit<MorphButtonProps, "children"> {
   icon: ButtonIcons;
 }
 
@@ -24,8 +24,8 @@ const IconButton = ({ className, icon, ...props }: IconButtonProps) => {
   return (
     <ElevationButton
       className={clazz}
-      type={props.type ?? elevationButtonSizes.medium}
-      color={props.color ?? elevationButtonColors.gray}
+      type={props.type ?? morphButtonSizes.medium}
+      color={props.color ?? morphButtonColors.gray}
       {...props}
     >
       {icon}
